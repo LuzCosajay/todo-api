@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm ci --omit=dev --ignore-scripts
 
-COPY . .
+COPY index.js ./
 
 EXPOSE 3000
 
